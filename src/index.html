@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LoopLess Inspired Site</title>
+
+  <!-- Google Fonts: Inter and Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN with dark mode support -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#4f46e5',
+            primaryDark: '#4338ca',
+          },
+          boxShadow: {
+            soft: '0 4px 20px rgba(0,0,0,0.1)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      transition: background-color 0.3s, color 0.3s;
+    }
+    @keyframes background-pan {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .animate-background-pan {
+      background-size: 200% 200%;
+      animation: background-pan 5s ease infinite;
+    }
+    .animate-pulseGlow {
+      animation: pulseGlow 2.5s ease-in-out infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 0px #4f46e5); }
+      50% { filter: drop-shadow(0 0 10px #4f46e5); }
+    }
+  </style>
+</head>
+
+<body class="relative bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 font-sans">
+
+  <!-- Particle Background -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <div class="w-full h-full bg-[radial-gradient(rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[length:30px_30px] dark:bg-[radial-gradient(rgba(255,255,255,0.02)_1px,transparent_1px)]"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between py-6">
+      <div class="text-2xl font-heading font-bold tracking-wide text-primary dark:text-primaryDark">
+        LoopLess
+      </div>
+      <button id="darkToggle" aria-label="Toggle Dark Mode" class="focus:outline-none p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+        <svg id="iconSun" class="w-6 h-6 hidden dark:block text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5v-3m0 19.5v-3m9-9h3m-19.5 0h3m13.5 7.5l2.12 2.12m-15-15l2.12 2.12m13.5-2.12L16.5 7.5m-9 9L7.5 16.5M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+        <svg id="iconMoon" class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 md:py-32">
+      <h1 class="text-5xl md:text-6xl font-heading font-extrabold mb-6 leading-tight text-primary dark:text-primaryDark drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-500 animate-background-pan">
+        Break Free from Screen Addiction
+      </h1>
+      <p class="text-lg md:text-xl max-w-xl mx-auto mb-10 text-gray-700 dark:text-gray-300">
+        LoopLess helps you reduce screen time with science-backed CBT tools and a gentle, effective approach.
+      </p>
+    </section>
+
+    <!-- Inserted Image ABOVE Powerful Features -->
+    <div class="max-w-5xl mx-auto mb-12">
+      <img src="../images/Asset3.png" alt="Asset 3" class="mx-auto" style="width: 280px;" />
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 relative z-10">
+      <div class="absolute inset-0 -z-10 blur-3xl opacity-40 pointer-events-none" style="background: radial-gradient(circle at center, #4f46e5 0%, transparent 70%);"></div>
+      <h2 class="text-3xl font-heading font-bold text-center mb-12">Powerful Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div class="feature-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-soft transform transition duration-300 text-center backdrop-blur-md bg-opacity-70 dark:bg-opacity-60">
+          <div class="flex justify-center mb-4">
+            <svg class="w-16 h-16 text-primary dark:text-primaryDark animate-pulseGlow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6" />
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">CBT-Based Strategies</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-xs mx-auto">
+            Use clinically proven Cognitive Behavioral Therapy tools tailored for screen addiction recovery.
+          </p>
+        </div>
+
+        <div class="feature-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-soft transform transition duration-300 text-center backdrop-blur-md bg-opacity-70 dark:bg-opacity-60">
+          <div class="flex justify-center mb-4">
+            <svg class="w-16 h-16 text-primary dark:text-primaryDark animate-pulseGlow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6" />
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Personalized Recovery</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-xs mx-auto">
+            Tailored tasks, exposure exercises, and mood tracking designed specifically for you.
+          </p>
+        </div>
+
+        <div class="feature-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-soft transform transition duration-300 text-center backdrop-blur-md bg-opacity-70 dark:bg-opacity-60">
+          <div class="flex justify-center mb-4">
+            <svg class="w-16 h-16 text-primary dark:text-primaryDark animate-pulseGlow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6" />
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Track Progress</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-xs mx-auto">
+            Monitor your screen time, mood, and improvements with clear insights.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="relative isolate overflow-hidden bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 rounded-2xl shadow-xl px-6 py-10 sm:px-12 lg:py-14 my-12 text-white animate-gradient-x">
+  <div class="mx-auto max-w-4xl text-center">
+    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl drop-shadow-lg">
+      Your Mind Deserves Better.
+    </h2>
+    <p class="mt-4 text-lg sm:text-xl text-white/90 font-medium">
+      LoopLess helps you escape the loop and live with intention.
+    </p>
+    <div class="mt-6">
+      <a href="#movement" class="inline-block rounded-full bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-md hover:scale-105 transition-transform">
+        Join the Movement
+      </a>
+    </div>
+  </div>
+  <div class="absolute left-0 top-0 -z-10 h-full w-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-white/10 via-white/5 to-transparent opacity-50 blur-3xl"></div>
+</div>
+
+
+    <!-- CBT Overview Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800 rounded-lg mt-12">
+      <h2 class="text-3xl font-heading font-bold text-center mb-10">Why CBT Works</h2>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-gray-700 dark:text-gray-300">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Proven, Evidence-Based Approach</h3>
+          <p>CBT (Cognitive Behavioral Therapy) has been shown in numerous studies to reduce addictive behaviors by helping users recognize and reframe thought patterns.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Practical, Day-to-Day Tools</h3>
+          <p>It’s not just theory—CBT provides simple exercises and habits that can be built into daily routines to help users gain control over their impulses and habits.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Built for Long-Term Change</h3>
+          <p>Unlike short-term motivation, CBT equips users with mental strategies that continue to work even when willpower fades, promoting lasting recovery.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Adaptable to Tech Addiction</h3>
+          <p>LoopLess uses CBT techniques specifically tailored to the unique challenges of smartphone and social media overuse.</p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 8s ease infinite;
+}
+</style>
+
+
+    <!-- How LoopLess Helps -->
+    <section class="py-20">
+      <h2 class="text-3xl font-heading font-bold text-center mb-10">How LoopLess Helps</h2>
+      <div class="max-w-4xl mx-auto space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+        <p>LoopLess doesn’t just tell you to stop scrolling—it gives you the tools to do it. Each step of your recovery is personalized based on how you use your phone, what apps you struggle with, and how you feel before and after using them.</p>
+        <p>You’ll start with small, manageable exposure tasks designed to help you tolerate the urge to use your phone without giving in. As you progress, these tasks evolve into more complex challenges that build long-term resistance and clarity.</p>
+        <p>You’ll also log your emotions, journal your thoughts, and identify triggers. By building self-awareness, LoopLess helps you interrupt harmful thought patterns and shift to healthier behaviors—just like in real CBT therapy.</p>
+        <p>And because screen addiction is isolating, LoopLess is designed to reconnect you—with yourself, your goals, and the people around you.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="text-center mb-6">
+  <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg animate-pulse">
+    Be the First to Break Free 📱💥
+  </h2>
+  <p class="mt-2 text-lg md:text-xl text-white/80 font-medium">
+    Join the waitlist for early access to <span class="text-indigo-400 font-semibold">LoopLess</span> and start reclaiming your time.
+  </p>
+</div>
+
+
+
+  <section class="py-16 md:py-24 relative z-10">
+  <form id="waitlistForm" class="flex flex-col space-y-4 max-w-md mx-auto">
+    <input 
+      type="email" 
+      name="email" 
+      id="email" 
+      placeholder="Enter your email" 
+      required 
+      class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <button 
+      type="submit" 
+      class="bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition"
+    >
+      Join Waitlist
+    </button>
+    <p id="formMessage" class="text-sm mt-2"></p>
+  </form>
+</section>
+
+<script>
+  document.getElementById('waitlistForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const emailInput = document.getElementById('email');
+    const formMessage = document.getElementById('formMessage');
+    formMessage.textContent = '';
+    formMessage.style.color = '';
+
+    const email = emailInput.value.trim();
+    if (!email) {
+      formMessage.style.color = 'red';
+      formMessage.textContent = 'Please enter a valid email.';
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3001/join-waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        formMessage.style.color = 'green';
+        formMessage.textContent = data.message || 'Thanks! You’ve been added to the waitlist.';
+        emailInput.value = '';
+      } else {
+        formMessage.style.color = 'red';
+        formMessage.textContent = data.message || 'Something went wrong. Try again.';
+      }
+    } catch (error) {
+      formMessage.style.color = 'red';
+      formMessage.textContent = 'Network error. Try again.';
+    }
+  });
+</script>
+
+<section class="bg-gray-900 text-white py-20 px-6 sm:px-12">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold tracking-tight sm:text-5xl mb-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 inline-block text-transparent bg-clip-text">
+      Why LoopLess Leaves the Rest Behind
+    </h2>
+    <p class="text-lg text-white/80 max-w-3xl mx-auto">
+      Tired of apps that just block screens or guilt-trip you? Here's how we stack up against the competition.
+    </p>
+  </div>
+
+  <div class="mt-16 overflow-x-auto">
+    <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+      <thead class="bg-white/5">
+        <tr class="text-left text-white text-lg">
+          <th class="py-4 px-6">Feature</th>
+          <th class="py-4 px-6">LoopLess</th>
+          <th class="py-4 px-6">Opal</th>
+          <th class="py-4 px-6">Quittr</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-white/10 text-white/90 text-base">
+        <tr class="hover:bg-white/5 transition">
+          <td class="py-4 px-6 font-medium">CBT-Based Recovery Tools</td>
+          <td class="py-4 px-6">✅ Yes — deep, customizable</td>
+          <td class="py-4 px-6">❌ None</td>
+          <td class="py-4 px-6">❌ None</td>
+        </tr>
+        <tr class="hover:bg-white/5 transition">
+          <td class="py-4 px-6 font-medium">Emotion + Thought Tracking</td>
+          <td class="py-4 px-6">✅ Integrated into daily use</td>
+          <td class="py-4 px-6">❌ Limited to usage stats</td>
+          <td class="py-4 px-6">❌ Not included</td>
+        </tr>
+        <tr class="hover:bg-white/5 transition">
+          <td class="py-4 px-6 font-medium">Tailored Challenges by App</td>
+          <td class="py-4 px-6">✅ Yes — TikTok, Instagram, YouTube & more</td>
+          <td class="py-4 px-6">❌ Generic blocks only</td>
+          <td class="py-4 px-6">❌ Not available</td>
+        </tr>
+        <tr class="hover:bg-white/5 transition">
+          <td class="py-4 px-6 font-medium">User-Centric Design</td>
+          <td class="py-4 px-6">✅ Personal, creative, supportive</td>
+          <td class="py-4 px-6">➖ Clean but cold</td>
+          <td class="py-4 px-6">➖ Functional but dated</td>
+        </tr>
+        <tr class="hover:bg-white/5 transition">
+          <td class="py-4 px-6 font-medium">Price</td>
+          <td class="py-4 px-6">🎉 Free during beta</td>
+          <td class="py-4 px-6">💸 Subscription required</td>
+          <td class="py-4 px-6">💸 Subscription required</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mt-12 text-center">
+    <p class="text-white/80 text-lg">We’re not here to block. We’re here to **heal**.</p>
+    <a href="#waitlist" class="mt-6 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform">
+      Get Early Access →
+    </a>
+  </div>
+</section>
+
+<section class="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-24 px-6 sm:px-12">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+      Deep App Tracking, Reimagined
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 shadow-xl hover:scale-105 transition transform duration-300">
+        <div class="text-3xl mb-4">📊</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Every App Logged</h3>
+        <p class="text-white/80">Know exactly when, why, and how you opened each app. No vague totals—just real insight.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 shadow-xl hover:scale-105 transition transform duration-300">
+        <div class="text-3xl mb-4">🕐</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Time-of-Day Patterns</h3>
+        <p class="text-white/80">Heatmaps reveal your most vulnerable moments—so you can tackle the urge where it lives.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 shadow-xl hover:scale-105 transition transform duration-300">
+        <div class="text-3xl mb-4">📍</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Emotion Mapping</h3>
+        <p class="text-white/80">Log how you feel before and after. Our AI tracks emotional triggers in real time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gradient-to-br from-[#111827] via-[#1f2937] to-[#111827] text-white py-24 px-6 sm:px-12">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-500 text-transparent bg-clip-text">
+      Your AI Mentor, Step by Step
+    </h2>
+    <div class="relative grid gap-12 sm:grid-cols-1 md:grid-cols-3">
+      <div class="relative bg-white/5 backdrop-blur-md border border-fuchsia-500/30 rounded-2xl p-6 shadow-2xl hover:rotate-[-1deg] hover:scale-105 transform transition duration-300">
+        <div class="text-3xl mb-4">🎯</div>
+        <h3 class="text-xl font-semibold text-fuchsia-300 mb-2">Personalized Goals</h3>
+        <p class="text-white/80">Your coach sets smart goals tuned to your rhythm, not someone else’s grind culture.</p>
+      </div>
+      <div class="relative bg-white/5 backdrop-blur-md border border-fuchsia-500/30 rounded-2xl p-6 shadow-2xl hover:rotate-[1deg] hover:scale-105 transform transition duration-300">
+        <div class="text-3xl mb-4">📔</div>
+        <h3 class="text-xl font-semibold text-fuchsia-300 mb-2">Reflective Journals</h3>
+        <p class="text-white/80">Emotional journaling guided by GPT-powered prompts designed to build self-awareness.</p>
+      </div>
+      <div class="relative bg-white/5 backdrop-blur-md border border-fuchsia-500/30 rounded-2xl p-6 shadow-2xl hover:rotate-[-1deg] hover:scale-105 transform transition duration-300">
+        <div class="text-3xl mb-4">💡</div>
+        <h3 class="text-xl font-semibold text-fuchsia-300 mb-2">Behavioral Nudges</h3>
+        <p class="text-white/80">Real-time, science-backed nudges help you disrupt impulsive actions and reflect before you scroll.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] py-24 px-6 sm:px-12 text-white">
+  <div class="max-w-5xl mx-auto text-center mb-12">
+    <h2 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-sky-500 to-purple-500 text-transparent bg-clip-text">
+      See Your Progress in Real Time
+    </h2>
+    <p class="mt-4 text-white/70 text-lg">From chaos to control—track your digital habits as they transform.</p>
+  </div>
+
+  <div class="flex justify-center">
+    <svg viewBox="0 0 800 300" class="w-full max-w-4xl" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#06b6d4" />
+          <stop offset="50%" stop-color="#818cf8" />
+          <stop offset="100%" stop-color="#a855f7" />
+        </linearGradient>
+        <linearGradient id="fillGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#a855f7" stop-opacity="0.4" />
+          <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+
+      <!-- Filled area under the curve -->
+      <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80 L 800 300 L 0 300 Z"
+        fill="url(#fillGradient)" />
+
+      <!-- Line curve -->
+      <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80"
+        fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="2s" fill="freeze" />
+      </path>
+
+      <!-- Optional dots -->
+      <circle cx="0" cy="250" r="5" fill="#06b6d4" />
+      <circle cx="400" cy="120" r="5" fill="#818cf8" />
+      <circle cx="800" cy="80" r="5" fill="#a855f7" />
+    </svg>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="py-20 bg-gradient-to-r from-indigo-50 to-purple-100 dark:from-gray-800 dark:to-gray-900 rounded-lg mt-16 max-w-5xl mx-auto px-6">
+  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary dark:text-primaryDark">What Our Users Say</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
+      <p class="mb-4 italic">"LoopLess helped me finally get my phone usage under control without feeling overwhelmed."</p>
+      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— Daniel Genzhi.</footer>
+    </blockquote>
+    <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
+      <p class="mb-4 italic">"The CBT exercises really work. I feel more aware and less hooked."</p>
+      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— David Wang.</footer>
+    </blockquote>
+    <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
+      <p class="mb-4 italic">"I love how the app adapts to my mood and usage patterns. So personal!"</p>
+      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— Jonathan Byrne.</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 max-w-5xl mx-auto mt-20 px-6">
+  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary dark:text-primaryDark">Frequently Asked Questions</h2>
+  <div class="space-y-6 text-gray-700 dark:text-gray-300">
+    <details class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-soft cursor-pointer">
+      <summary class="font-semibold text-lg hover:text-primary dark:hover:text-primaryDark">Is LoopLess free to use?</summary>
+      <p class="mt-2 leading-relaxed">Yes! LoopLess offers a free basic version with all core CBT tools available.</p>
+    </details>
+    <details class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-soft cursor-pointer">
+      <summary class="font-semibold text-lg hover:text-primary dark:hover:text-primaryDark">How do I know CBT will work for me?</summary>
+      <p class="mt-2 leading-relaxed">CBT is clinically proven to help with addictive behaviors and is tailored in LoopLess specifically for screen addiction.</p>
+    </details>
+    <details class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-soft cursor-pointer">
+      <summary class="font-semibold text-lg hover:text-primary dark:hover:text-primaryDark">Can I use LoopLess on multiple devices?</summary>
+      <p class="mt-2 leading-relaxed">Yes, your progress syncs across devices once you create an account.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Newsletter Signup Callout -->
+<section class="py-16 bg-primary dark:bg-primaryDark rounded-lg mt-20 max-w-3xl mx-auto text-center text-white px-6 shadow-soft">
+  <h2 class="text-3xl font-heading font-bold mb-4">Stay Updated</h2>
+  <p class="mb-8 max-w-xl mx-auto">Subscribe to our newsletter for tips, updates, and exclusive CBT content.</p>
+  <form id="newsletterForm" class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+    <input 
+      type="email" 
+      name="newsletterEmail" 
+      id="newsletterEmail" 
+      placeholder="Enter your email" 
+      required 
+      class="p-3 rounded text-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-400 flex-grow"
+    />
+    <button 
+      type="submit" 
+      class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition"
+    >
+      Subscribe
+    </button>
+  </form>
+  <p id="newsletterMessage" class="mt-4 text-sm"></p>
+</section>
+
+<script>
+  // Newsletter form submit handler
+  document.getElementById('newsletterForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const emailInput = document.getElementById('newsletterEmail');
+    const messageEl = document.getElementById('newsletterMessage');
+    messageEl.textContent = '';
+    messageEl.style.color = '';
+
+    const email = emailInput.value.trim();
+    if (!email) {
+      messageEl.style.color = 'red';
+      messageEl.textContent = 'Please enter a valid email.';
+      return;
+    }
+
+    try {
+      // Simulate async subscription call - replace with real API
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      messageEl.style.color = 'limegreen';
+      messageEl.textContent = 'Thanks for subscribing!';
+      emailInput.value = '';
+    } catch {
+      messageEl.style.color = 'red';
+      messageEl.textContent = 'Subscription failed. Please try again.';
+    }
+  });
+</script>
+
+<!-- Scroll to top button (from previous snippet for convenience) -->
+<button 
+  id="scrollTopBtn" 
+  class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primaryDark transition-opacity opacity-70 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-primaryDark hidden"
+  aria-label="Scroll to top"
+>
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+  </svg>
+</button>
+
+<!-- Extra Animated Gradient Accent Bar -->
+<div class="w-full h-1 mt-12 rounded animate-background-pan bg-gradient-to-r from-primary to-violet-500"></div>
+
+<script>
+  (function() {
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.remove('hidden');
+      } else {
+        scrollTopBtn.classList.add('hidden');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
+
+
+<!-- Hero-style Callout Banner with SVG Wave -->
+<section class="relative bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 text-white py-20 px-6 rounded-lg max-w-6xl mx-auto mb-20 overflow-hidden">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-heading font-extrabold mb-4 drop-shadow-lg">Take Control of Your Screen Time Today</h2>
+    <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-8 drop-shadow-md">
+      Join thousands of users who have broken free from digital distractions with LoopLess.
+    </p>
+    <a href="#download" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300">
+      Get Started Free
+    </a>
+  </div>
+
+  <!-- Animated SVG Wave -->
+  <svg class="absolute bottom-0 left-0 w-full h-20 md:h-32 opacity-70" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path fill="white" fill-opacity="0.3" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      <animate attributeName="d" dur="15s" repeatCount="indefinite"
+        values="
+          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          
+          M0,192L48,186.7C96,181,192,171,288,165.3C384,160,480,160,576,181.3C672,203,768,245,864,240C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          
+          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z
+        "
+      />
+    </path>
+  </svg>
+</section>
+
+<!-- Feature Cards with Hover Glow & SVG icons -->
+<section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-yellow-400 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-yellow-400 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-yellow-400 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.38 0 2.5 1.12 2.5 2.5S13.38 13 12 13s-2.5-1.12-2.5-2.5S10.62 8 12 8z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0 1 7.44 16.9l-1.42-1.42A8 8 0 1 0 4.58 11.58L3.17 10.17A10 10 0 0 1 12 2z" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-yellow-600">Insightful Analytics</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Track your screen time patterns with detailed insights and identify your biggest triggers.
+    </p>
+  </article>
+
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-purple-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-purple-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-purple-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-purple-600">Personalized CBT</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Get tailored cognitive behavioral exercises that evolve based on your progress and mood.
+    </p>
+  </article>
+
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-pink-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-pink-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-pink-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-pink-600">Progress Tracking</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Monitor your improvements with visual charts and celebrate every success along the way.
+    </p>
+  </article>
+</section>
+
+<!-- Interactive Mood Selector -->
+<section class="max-w-4xl mx-auto px-6 mb-24">
+  <h2 class="text-3xl font-heading font-bold mb-8 text-center text-primary dark:text-primaryDark">How Are You Feeling Today?</h2>
+  <div class="flex justify-center gap-10">
+    <button aria-label="Happy" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-yellow-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
+      <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM8 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 7a5 5 0 0 1-4-2h8a5 5 0 0 1-4 2z"/></svg>
+      <span class="font-semibold text-yellow-600">Happy</span>
+    </button>
+    <button aria-label="Neutral" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-gray-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
+      <svg class="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM8 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 8a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4z"/></svg>
+      <span class="font-semibold text-gray-600">Neutral</span>
+    </button>
+    <button aria-label="Sad" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-blue-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
+      <svg class="w-16 h-16 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm-4-9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 6a5 5 0 0 1-4-2h8a5 5 0 0 1-4 2z"/></svg>
+      <span class="font-semibold text-blue-600">Sad</span>
+    </button>
+  </div>
+</section>
+
+<!-- Floating Scroll to Top Button -->
+<button 
+  id="scrollTopBtn" 
+  class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primaryDark transition-opacity opacity-70 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-primaryDark hidden"
+  aria-label="Scroll to top"
+>
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+  </svg>
+</button>
+
+<!-- Animated Gradient Accent Bar -->
+<div class="w-full h-1 mt-12 rounded animate-background-pan bg-gradient-to-r from-primary to-violet-500"></div>
+
+<script>
+  // Scroll to top button show/hide and action
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.remove('hidden');
+    } else {
+      scrollTopBtn.classList.add('hidden');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500 dark:text-gray-400 text-sm border-t border-gray-200 dark:border-gray-700">
+    &copy; 2025 LoopLess. All rights reserved.
+  </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    const htmlEl = document.documentElement;
+    const iconSun = document.getElementById('iconSun');
+    const iconMoon = document.getElementById('iconMoon');
+
+    if (localStorage.getItem('theme') === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlEl.classList.add('dark');
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    } else {
+      htmlEl.classList.remove('dark');
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    }
+
+    toggle.addEventListener('click', () => {
+      htmlEl.classList.toggle('dark');
+      const isDark = htmlEl.classList.contains('dark');
+      iconSun.classList.toggle('hidden');
+      iconMoon.classList.toggle('hidden');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+
+
+
+</body>
+</html>
