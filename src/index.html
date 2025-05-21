@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LoopLess Inspired Site</title>
+  
+
 
   <!-- Google Fonts: Inter and Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet" />
@@ -65,28 +67,82 @@
     <!-- Navbar -->
     <nav class="flex items-center justify-between py-6">
       <div class="text-2xl font-heading font-bold tracking-wide text-primary dark:text-primaryDark">
-        LoopLess
+        
       </div>
       <button id="darkToggle" aria-label="Toggle Dark Mode" class="focus:outline-none p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
         <svg id="iconSun" class="w-6 h-6 hidden dark:block text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5v-3m0 19.5v-3m9-9h3m-19.5 0h3m13.5 7.5l2.12 2.12m-15-15l2.12 2.12m13.5-2.12L16.5 7.5m-9 9L7.5 16.5M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
         <svg id="iconMoon" class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
       </button>
     </nav>
+    
+   <!-- Hero Section -->
+<section class="flex items-center justify-between px-12 md:px-20 py-12 md:py-16 max-w-full mx-auto gap-10">
+  <!-- Left Side: Text -->
+  <div class="text-left flex-1 max-w-[60%]">
+    <h1 class="text-6xl md:text-7xl font-heading font-extrabold leading-tight md:leading-[1.1] text-primary dark:text-primaryDark drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-500 animate-background-pan">
+      Break Free from Screen Addiction
+    </h1>
+    <p class="mt-6 text-2xl md:text-3xl text-gray-700 dark:text-gray-300 max-w-[90%]">
+      LoopLess helps you understand <em class="italic text-primary dark:text-violet-400 animate-pulse">why</em> you reach for your phone and provides CBT-based tools to reduce your screen time.
+    </p>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="text-center py-20 md:py-32">
-      <h1 class="text-5xl md:text-6xl font-heading font-extrabold mb-6 leading-tight text-primary dark:text-primaryDark drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-500 animate-background-pan">
-        Break Free from Screen Addiction
-      </h1>
-      <p class="text-lg md:text-xl max-w-xl mx-auto mb-10 text-gray-700 dark:text-gray-300">
-        LoopLess helps you reduce screen time with science-backed CBT tools and a gentle, effective approach.
-      </p>
-    </section>
+  <!-- Right Side: Phone Image -->
+  <div class="flex-1 max-w-[35%] flex justify-end">
+    <img src="../images/Phone.png" alt="Phone" class="w-[320px] md:w-[400px]" />
+  </div>
+</section>
 
-    <!-- Inserted Image ABOVE Powerful Features -->
-    <div class="max-w-5xl mx-auto mb-12">
-      <img src="../images/Asset3.png" alt="Asset 3" class="mx-auto" style="width: 280px;" />
-    </div>
+
+
+    <div class="max-w-5xl mx-auto mt-0 mb-16">
+  <!-- Light Mode Logo -->
+  <img src="../images/LOGO1.png" alt="LoopLess Logo" class="block dark:hidden h-28 mx-auto" />
+  <!-- Dark Mode Logo -->
+  <img src="../images/LOGO2.png" alt="LoopLess Logo" class="hidden dark:block h-28 mx-auto" />
+</div>
+
+<div class="text-center mt-20 mb-6">
+  <h2 class="text-black dark:text-white text-2xl font-semibold mb-2">
+    ⚠️ The Screen Crisis by the Numbers
+  </h2>
+  <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl mx-auto">
+    It’s not just distraction — it’s compulsion. These stats highlight how screen overuse is reshaping attention spans, mental health, and sleep patterns.
+  </p>
+</div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+  <!-- Daily Average Usage -->
+  <div class="bg-gradient-to-br from-blue-800/70 to-slate-900/70 p-5 rounded-2xl border border-blue-500/30 shadow-lg">
+    <div class="text-white text-sm mb-1">Daily Screen Time</div>
+    <div class="text-4xl font-bold text-blue-300 mb-2">7.5 hrs</div>
+    <p class="text-slate-300 text-xs leading-snug">The average teen now spends over 7 hours per day on screens — not including schoolwork. That's more than sleep in many cases.</p>
+  </div>
+
+  <!-- App Checks Per Day -->
+  <div class="bg-gradient-to-br from-purple-800/70 to-slate-900/70 p-5 rounded-2xl border border-purple-500/30 shadow-lg">
+    <div class="text-white text-sm mb-1">App Opens Per Day</div>
+    <div class="text-4xl font-bold text-purple-300 mb-2">96</div>
+    <p class="text-slate-300 text-xs leading-snug">Users check their phones nearly 100 times a day — a compulsive loop driven by dopamine spikes and endless refreshes.</p>
+  </div>
+
+  <!-- Impact on Mental Health -->
+  <div class="bg-gradient-to-br from-rose-800/70 to-slate-900/70 p-5 rounded-2xl border border-rose-500/30 shadow-lg">
+    <div class="text-white text-sm mb-1">Anxiety & Depression Link</div>
+    <div class="text-4xl font-bold text-rose-300 mb-2">2.7x</div>
+    <p class="text-slate-300 text-xs leading-snug">Heavy social media users are 2.7x more likely to report symptoms of anxiety and depression — especially among teens.</p>
+  </div>
+
+  <!-- Sleep Disruption -->
+  <div class="bg-gradient-to-br from-amber-700/70 to-slate-900/70 p-5 rounded-2xl border border-amber-400/30 shadow-lg">
+    <div class="text-white text-sm mb-1">Sleep Loss (Avg. Teens)</div>
+    <div class="text-4xl font-bold text-amber-300 mb-2">2.5 hrs/night</div>
+    <p class="text-slate-300 text-xs leading-snug">Nighttime scrolling delays melatonin release, leading to 2–3 hours less sleep on average for smartphone users.</p>
+  </div>
+</div>
+
+
 
     <!-- Features Section -->
     <section class="py-16 md:py-24 relative z-10">
@@ -151,29 +207,288 @@
   <div class="absolute left-0 top-0 -z-10 h-full w-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-white/10 via-white/5 to-transparent opacity-50 blur-3xl"></div>
 </div>
 
+<!-- Hero-style Callout Banner with SVG Wave -->
+<section class="relative bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 text-white py-20 px-6 rounded-lg max-w-6xl mx-auto mb-20 overflow-hidden">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-heading font-extrabold mb-4 drop-shadow-lg">Take Control of Your Screen Time Today</h2>
+    <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-8 drop-shadow-md">
+      Join thousands of users who have broken free from digital distractions with LoopLess.
+    </p>
+    <a href="#download" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300">
+      Get Started Free
+    </a>
+  </div>
 
-    <!-- CBT Overview Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-800 rounded-lg mt-12">
-      <h2 class="text-3xl font-heading font-bold text-center mb-10">Why CBT Works</h2>
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-gray-700 dark:text-gray-300">
-        <div>
-          <h3 class="text-xl font-semibold mb-2">Proven, Evidence-Based Approach</h3>
-          <p>CBT (Cognitive Behavioral Therapy) has been shown in numerous studies to reduce addictive behaviors by helping users recognize and reframe thought patterns.</p>
+  <!-- Animated SVG Wave -->
+  <svg class="absolute bottom-0 left-0 w-full h-20 md:h-32 opacity-70" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path fill="white" fill-opacity="0.3" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      <animate attributeName="d" dur="15s" repeatCount="indefinite"
+        values="
+          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          
+          M0,192L48,186.7C96,181,192,171,288,165.3C384,160,480,160,576,181.3C672,203,768,245,864,240C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+          
+          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z
+        "
+      />
+    </path>
+  </svg>
+</section>
+
+
+
+<!-- Feature Cards with Hover Glow & SVG icons -->
+<section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-yellow-400 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-yellow-400 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-yellow-400 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.38 0 2.5 1.12 2.5 2.5S13.38 13 12 13s-2.5-1.12-2.5-2.5S10.62 8 12 8z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0 1 7.44 16.9l-1.42-1.42A8 8 0 1 0 4.58 11.58L3.17 10.17A10 10 0 0 1 12 2z" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-yellow-600">Insightful Analytics</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Track your screen time patterns with detailed insights and identify your biggest triggers.
+    </p>
+  </article>
+
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-purple-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-purple-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-purple-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-purple-600">Personalized CBT</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Get tailored cognitive behavioral exercises that evolve based on your progress and mood.
+    </p>
+  </article>
+
+  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-pink-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
+    <div class="absolute -top-10 -right-10 w-28 h-28 bg-pink-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+    <svg class="w-14 h-14 text-pink-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+    </svg>
+    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-pink-600">Progress Tracking</h3>
+    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+      Monitor your improvements with visual charts and celebrate every success along the way.
+    </p>
+  </article>
+</section>
+
+<!-- App Opens Stat Card -->
+<div class="text-center mb-6 bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+  <div class="text-slate-300 text-sm mb-1">Today's App Opens</div>
+  <div class="text-4xl font-bold text-white">108</div>
+  <div class="text-emerald-400 text-xs mt-2 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+      <path d="m5 12 5 5 9-9"></path>
+    </svg>
+    18% from yesterday
+  </div>
+</div>
+
+<!-- Most Opened Apps -->
+<div class="space-y-3 bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 mb-6">
+  <div class="text-white font-medium mb-2 text-sm">Most Opened Apps</div>
+
+  <!-- Discord -->
+  <div class="relative">
+    <div class="flex justify-between items-center mb-1">
+      <div class="flex items-center">
+        <div class="w-2 h-2 rounded-full bg-green-400 mr-2"></div>
+        <div class="text-slate-200 text-sm">Discord</div>
+      </div>
+      <div class="text-green-300 font-medium text-sm">31</div>
+    </div>
+    <div class="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+      <div class="h-full bg-green-400" style="width: 95%;"></div>
+    </div>
+  </div>
+
+  <!-- Snapchat -->
+  <div class="relative">
+    <div class="flex justify-between items-center mb-1">
+      <div class="flex items-center">
+        <div class="w-2 h-2 rounded-full bg-yellow-400 mr-2"></div>
+        <div class="text-slate-200 text-sm">Snapchat</div>
+      </div>
+      <div class="text-yellow-300 font-medium text-sm">22</div>
+    </div>
+    <div class="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+      <div class="h-full bg-yellow-400" style="width: 70%;"></div>
+    </div>
+  </div>
+
+  <!-- Reddit -->
+  <div class="relative">
+    <div class="flex justify-between items-center mb-1">
+      <div class="flex items-center">
+        <div class="w-2 h-2 rounded-full bg-orange-400 mr-2"></div>
+        <div class="text-slate-200 text-sm">Reddit</div>
+      </div>
+      <div class="text-orange-300 font-medium text-sm">16</div>
+    </div>
+    <div class="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+      <div class="h-full bg-orange-400" style="width: 55%;"></div>
+    </div>
+  </div>
+
+  <!-- BeReal -->
+  <div class="relative">
+    <div class="flex justify-between items-center mb-1">
+      <div class="flex items-center">
+        <div class="w-2 h-2 rounded-full bg-pink-400 mr-2"></div>
+        <div class="text-slate-200 text-sm">BeReal</div>
+      </div>
+      <div class="text-pink-300 font-medium text-sm">11</div>
+    </div>
+    <div class="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+      <div class="h-full bg-pink-400" style="width: 35%;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom Time Distribution Chart -->
+<div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 mb-6">
+  <div class="flex justify-between items-center mb-4">
+    <div class="text-white font-medium text-sm">Time Distribution</div>
+    <div class="text-slate-400 text-xs px-2 py-0.5 bg-slate-700/60 rounded-full">Today</div>
+  </div>
+  <div class="relative h-24">
+    <svg class="w-full h-full" viewBox="0 0 400 100" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="uniqueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="rgba(168, 85, 247, 0.4)"></stop>
+          <stop offset="100%" stop-color="rgba(168, 85, 247, 0)"></stop>
+        </linearGradient>
+      </defs>
+      <path 
+        d="M0,100 L0,80 C30,70 60,90 90,60 C120,40 150,50 180,65 C210,80 240,60 270,30 C300,10 330,30 360,70 C390,85 400,80 400,100 Z"
+        fill="url(#uniqueGradient)" 
+        stroke="rgba(168, 85, 247, 0.8)" 
+        stroke-width="2"
+      ></path>
+    </svg>
+    <div class="absolute bottom-0 left-0 right-0 flex justify-between text-xs text-slate-400 pt-1">
+      <div>6 AM</div><div>12 PM</div><div>6 PM</div><div>12 AM</div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom Rationale Breakdown -->
+<div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+  <div class="text-white font-medium mb-3 text-sm">Why the Usage Spike?</div>
+  <div class="grid grid-cols-4 gap-3">
+    <div class="bg-teal-500/20 rounded-lg p-3 border border-teal-500/30">
+      <div class="text-teal-300 text-xs">FOMO</div>
+      <div class="text-xl font-medium text-white mt-1">37%</div>
+    </div>
+    <div class="bg-rose-500/20 rounded-lg p-3 border border-rose-500/30">
+      <div class="text-rose-300 text-xs">Stress Relief</div>
+      <div class="text-xl font-medium text-white mt-1">29%</div>
+    </div>
+    <div class="bg-sky-500/20 rounded-lg p-3 border border-sky-500/30">
+      <div class="text-sky-300 text-xs">Habit Loop</div>
+      <div class="text-xl font-medium text-white mt-1">20%</div>
+    </div>
+    <div class="bg-lime-500/20 rounded-lg p-3 border border-lime-500/30">
+      <div class="text-lime-300 text-xs">Late Night Binge</div>
+      <div class="text-xl font-medium text-white mt-1">14%</div>
+    </div>
+  </div>
+</div>
+
+
+    <section class="py-24 bg-gradient-to-br from-[#f9fafb] via-[#eef1f5] to-[#e8ecf0] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-indigo-500 to-sky-400 bg-clip-text text-transparent mb-16">
+      Why CBT Works
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg rounded-3xl shadow-md p-6 border border-white/30 hover:scale-[1.015] transition-all duration-300">
+        <div class="text-3xl mb-4">📚</div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Proven, Evidence-Based Approach</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">
+          CBT helps users reframe thought patterns—supported by decades of research on behavioral health.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg rounded-3xl shadow-md p-6 border border-white/30 hover:scale-[1.015] transition-all duration-300">
+        <div class="text-3xl mb-4">🛠️</div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Practical, Day-to-Day Tools</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">
+          CBT gives you clear exercises you can integrate into your everyday routines to regain control.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg rounded-3xl shadow-md p-6 border border-white/30 hover:scale-[1.015] transition-all duration-300">
+        <div class="text-3xl mb-4">🧩</div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Built for Long-Term Change</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">
+          CBT strategies stick around—helping you bounce back even when motivation disappears.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg rounded-3xl shadow-md p-6 border border-white/30 hover:scale-[1.015] transition-all duration-300">
+        <div class="text-3xl mb-4">📱</div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Adaptable to Tech Addiction</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">
+          LoopLess uses CBT in a way that's made for the screen—built to target social media and endless scrolling.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gradient-to-br from-[#f1f5f9] via-[#e2e8f0] to-[#f8fafc] dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent mb-16">
+      How LoopLess Helps
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <!-- Left Column: Illustrative Cards -->
+      <div class="space-y-6">
+        <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg border border-white/30 p-6 rounded-3xl shadow-md transition-transform hover:scale-[1.015]">
+          <div class="text-2xl mb-2">🔍 Personalized Tracking</div>
+          <p class="text-gray-700 dark:text-gray-300">
+            LoopLess adapts to you—analyzing how you use your phone and how you feel before and after scrolling.
+          </p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2">Practical, Day-to-Day Tools</h3>
-          <p>It’s not just theory—CBT provides simple exercises and habits that can be built into daily routines to help users gain control over their impulses and habits.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2">Built for Long-Term Change</h3>
-          <p>Unlike short-term motivation, CBT equips users with mental strategies that continue to work even when willpower fades, promoting lasting recovery.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2">Adaptable to Tech Addiction</h3>
-          <p>LoopLess uses CBT techniques specifically tailored to the unique challenges of smartphone and social media overuse.</p>
+
+        <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg border border-white/30 p-6 rounded-3xl shadow-md transition-transform hover:scale-[1.015]">
+          <div class="text-2xl mb-2">📶 Gradual Exposure</div>
+          <p class="text-gray-700 dark:text-gray-300">
+            Small exposure tasks train your brain to tolerate urges—eventually evolving into powerful mental resistance.
+          </p>
         </div>
       </div>
-    </section>
+
+      <!-- Right Column: Journaling & Reconnection -->
+      <div class="space-y-6">
+        <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg border border-white/30 p-6 rounded-3xl shadow-md transition-transform hover:scale-[1.015]">
+          <div class="text-2xl mb-2">📝 Thought Journals</div>
+          <p class="text-gray-700 dark:text-gray-300">
+            Log emotions, identify triggers, and build self-awareness. Journaling is your internal mirror.
+          </p>
+        </div>
+
+        <div class="bg-white/40 dark:bg-white/10 backdrop-blur-lg border border-white/30 p-6 rounded-3xl shadow-md transition-transform hover:scale-[1.015]">
+          <div class="text-2xl mb-2">🤝 Reconnection</div>
+          <p class="text-gray-700 dark:text-gray-300">
+            Break the isolation. LoopLess helps you rediscover your goals, purpose, and relationships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <style>
 @keyframes gradient-x {
@@ -187,30 +502,19 @@
 </style>
 
 
-    <!-- How LoopLess Helps -->
-    <section class="py-20">
-      <h2 class="text-3xl font-heading font-bold text-center mb-10">How LoopLess Helps</h2>
-      <div class="max-w-4xl mx-auto space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-        <p>LoopLess doesn’t just tell you to stop scrolling—it gives you the tools to do it. Each step of your recovery is personalized based on how you use your phone, what apps you struggle with, and how you feel before and after using them.</p>
-        <p>You’ll start with small, manageable exposure tasks designed to help you tolerate the urge to use your phone without giving in. As you progress, these tasks evolve into more complex challenges that build long-term resistance and clarity.</p>
-        <p>You’ll also log your emotions, journal your thoughts, and identify triggers. By building self-awareness, LoopLess helps you interrupt harmful thought patterns and shift to healthier behaviors—just like in real CBT therapy.</p>
-        <p>And because screen addiction is isolating, LoopLess is designed to reconnect you—with yourself, your goals, and the people around you.</p>
-      </div>
-    </section>
-  </div>
 
+<section class="pt-32">
   <div class="text-center mb-6">
-  <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg animate-pulse">
-    Be the First to Break Free 📱💥
-  </h2>
-  <p class="mt-2 text-lg md:text-xl text-white/80 font-medium">
-    Join the waitlist for early access to <span class="text-indigo-400 font-semibold">LoopLess</span> and start reclaiming your time.
-  </p>
-</div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-blue-400 drop-shadow-lg animate-pulse">
+      Be the First to Break Free 📱💥
+    </h2>
+    <p class="mt-2 text-lg md:text-xl text-blue-400/80 font-medium">
+      Join the waitlist for early access to <span class="text-indigo-400 font-semibold">LoopLess</span> and start reclaiming your time.
+    </p>
+  </div>
+</section>
 
-
-
-  <section class="py-16 md:py-24 relative z-10">
+<section class="py-8 md:py-12 relative z-10">
   <form id="waitlistForm" class="flex flex-col space-y-4 max-w-md mx-auto">
     <input 
       type="email" 
@@ -229,6 +533,7 @@
     <p id="formMessage" class="text-sm mt-2"></p>
   </form>
 </section>
+
 
 <script>
   document.getElementById('waitlistForm').addEventListener('submit', async (e) => {
@@ -287,7 +592,7 @@
           <th class="py-4 px-6">Feature</th>
           <th class="py-4 px-6">LoopLess</th>
           <th class="py-4 px-6">Opal</th>
-          <th class="py-4 px-6">Quittr</th>
+          <th class="py-4 px-6">One Sec</th>
         </tr>
       </thead>
       <tbody class="divide-y divide-white/10 text-white/90 text-base">
@@ -391,61 +696,111 @@
     <p class="mt-4 text-white/70 text-lg">From chaos to control—track your digital habits as they transform.</p>
   </div>
 
-  <div class="flex justify-center">
-    <svg viewBox="0 0 800 300" class="w-full max-w-4xl" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#06b6d4" />
-          <stop offset="50%" stop-color="#818cf8" />
-          <stop offset="100%" stop-color="#a855f7" />
-        </linearGradient>
-        <linearGradient id="fillGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#a855f7" stop-opacity="0.4" />
-          <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
-        </linearGradient>
-      </defs>
+  <div class="bg-slate-800/60 rounded-2xl p-6 border border-slate-700/50 shadow-lg max-w-5xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+      <div class="text-white font-semibold text-sm">7-Day App Open Trend</div>
+      <div class="text-slate-400 text-xs bg-slate-700/60 rounded-full px-3 py-0.5">This Week</div>
+    </div>
 
-      <!-- Filled area under the curve -->
-      <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80 L 800 300 L 0 300 Z"
-        fill="url(#fillGradient)" />
+    <div class="relative w-full h-64">
+      <svg class="absolute w-full h-full" viewBox="0 0 800 300" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#06b6d4" />
+            <stop offset="50%" stop-color="#818cf8" />
+            <stop offset="100%" stop-color="#a855f7" />
+          </linearGradient>
+          <linearGradient id="fillGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+          </linearGradient>
+        </defs>
 
-      <!-- Line curve -->
-      <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80"
-        fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-        <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="2s" fill="freeze" />
-      </path>
+        <!-- Fill area -->
+        <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80 L 800 300 L 0 300 Z"
+          fill="url(#fillGradient)" />
 
-      <!-- Optional dots -->
-      <circle cx="0" cy="250" r="5" fill="#06b6d4" />
-      <circle cx="400" cy="120" r="5" fill="#818cf8" />
-      <circle cx="800" cy="80" r="5" fill="#a855f7" />
-    </svg>
+        <!-- Line -->
+        <path d="M 0 250 C 150 180, 250 200, 400 120 C 550 40, 650 100, 800 80"
+          fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="2s" fill="freeze" />
+        </path>
+
+        <!-- Dots -->
+        <circle cx="0" cy="250" r="5" fill="#06b6d4" />
+        <circle cx="250" cy="200" r="5" fill="#0ea5e9" />
+        <circle cx="400" cy="120" r="5" fill="#818cf8" />
+        <circle cx="650" cy="100" r="5" fill="#a855f7" />
+        <circle cx="800" cy="80" r="5" fill="#d946ef" />
+      </svg>
+
+      <!-- Value markers -->
+      <div class="absolute bottom-0 left-0 right-0 flex justify-between text-xs text-slate-400 px-2">
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+      </div>
+    </div>
+
+    <!-- Numeric summary -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 text-sm text-slate-300">
+      <div class="bg-slate-700/40 rounded-lg p-4 border border-slate-600/40 text-center">
+        <div class="text-white text-2xl font-bold">74</div>
+        <div class="mt-1 text-xs">Today’s Opens</div>
+        <div class="text-emerald-400 mt-1 flex justify-center items-center text-xs">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m5 12 5 5 9-9"></path>
+          </svg>
+          +12% from yesterday
+        </div>
+      </div>
+      <div class="bg-slate-700/40 rounded-lg p-4 border border-slate-600/40 text-center">
+        <div class="text-white text-2xl font-bold">390</div>
+        <div class="mt-1 text-xs">Weekly Opens</div>
+        <div class="text-blue-400 mt-1 text-xs">+6% vs last week</div>
+      </div>
+      <div class="bg-slate-700/40 rounded-lg p-4 border border-slate-600/40 text-center">
+        <div class="text-white text-2xl font-bold">3h 42m</div>
+        <div class="mt-1 text-xs">Total Screen Time</div>
+        <div class="text-yellow-400 mt-1 text-xs">↓ 8% from avg</div>
+      </div>
+      <div class="bg-slate-700/40 rounded-lg p-4 border border-slate-600/40 text-center">
+        <div class="text-white text-2xl font-bold">7</div>
+        <div class="mt-1 text-xs">Peak Hour Opens</div>
+        <div class="text-fuchsia-400 mt-1 text-xs">5–6 PM</div>
+      </div>
+    </div>
   </div>
 </section>
 
 
+
 <!-- Testimonials Section -->
 <section class="py-20 bg-gradient-to-r from-indigo-50 to-purple-100 dark:from-gray-800 dark:to-gray-900 rounded-lg mt-16 max-w-5xl mx-auto px-6">
-  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary dark:text-primaryDark">What Our Users Say</h2>
+  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-blue-400">What Our Users Say</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
       <p class="mb-4 italic">"LoopLess helped me finally get my phone usage under control without feeling overwhelmed."</p>
-      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— Daniel Genzhi.</footer>
+      <footer class="font-semibold text-sm text-blue-400">— Daniel Genzhi.</footer>
     </blockquote>
     <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
       <p class="mb-4 italic">"The CBT exercises really work. I feel more aware and less hooked."</p>
-      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— David Wang.</footer>
+      <footer class="font-semibold text-sm text-blue-400">— David Wang.</footer>
     </blockquote>
     <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-soft text-gray-700 dark:text-gray-300">
       <p class="mb-4 italic">"I love how the app adapts to my mood and usage patterns. So personal!"</p>
-      <footer class="font-semibold text-sm text-primary dark:text-primaryDark">— Jonathan Byrne.</footer>
+      <footer class="font-semibold text-sm text-blue-400">— Jonathan Byrne.</footer>
     </blockquote>
   </div>
 </section>
 
 <!-- FAQ Section -->
 <section class="py-20 max-w-5xl mx-auto mt-20 px-6">
-  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary dark:text-primaryDark">Frequently Asked Questions</h2>
+  <h2 class="text-3xl font-heading font-bold text-center mb-12 text-blue-400">Frequently Asked Questions</h2>
   <div class="space-y-6 text-gray-700 dark:text-gray-300">
     <details class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-soft cursor-pointer">
       <summary class="font-semibold text-lg hover:text-primary dark:hover:text-primaryDark">Is LoopLess free to use?</summary>
@@ -463,27 +818,29 @@
 </section>
 
 <!-- Newsletter Signup Callout -->
-<section class="py-16 bg-primary dark:bg-primaryDark rounded-lg mt-20 max-w-3xl mx-auto text-center text-white px-6 shadow-soft">
-  <h2 class="text-3xl font-heading font-bold mb-4">Stay Updated</h2>
-  <p class="mb-8 max-w-xl mx-auto">Subscribe to our newsletter for tips, updates, and exclusive CBT content.</p>
-  <form id="newsletterForm" class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-    <input 
-      type="email" 
-      name="newsletterEmail" 
-      id="newsletterEmail" 
-      placeholder="Enter your email" 
-      required 
-      class="p-3 rounded text-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-400 flex-grow"
-    />
-    <button 
-      type="submit" 
-      class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition"
-    >
-      Subscribe
-    </button>
-  </form>
-  <p id="newsletterMessage" class="mt-4 text-sm"></p>
-</section>
+<div class="max-w-xl mx-auto">
+  <!-- Newsletter box here -->
+  <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700/50 text-white mb-6">
+    <h2 class="text-xl font-semibold mb-2">Subscribe to Our Newsletter</h2>
+    <p class="text-sm text-slate-300 mb-4">
+      Get weekly insights and tools to help reduce screen time, backed by CBT and behavior science.
+    </p>
+    <form class="flex flex-col sm:flex-row gap-3">
+      <input 
+        type="email" 
+        placeholder="Enter your email"
+        class="w-full px-4 py-2 rounded-md bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+      />
+      <button 
+        type="submit" 
+        class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2 rounded-md transition duration-200"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
 
 <script>
   // Newsletter form submit handler
@@ -526,8 +883,7 @@
   </svg>
 </button>
 
-<!-- Extra Animated Gradient Accent Bar -->
-<div class="w-full h-1 mt-12 rounded animate-background-pan bg-gradient-to-r from-primary to-violet-500"></div>
+
 
 <script>
   (function() {
@@ -547,91 +903,6 @@
 </script>
 
 
-<!-- Hero-style Callout Banner with SVG Wave -->
-<section class="relative bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 text-white py-20 px-6 rounded-lg max-w-6xl mx-auto mb-20 overflow-hidden">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-5xl font-heading font-extrabold mb-4 drop-shadow-lg">Take Control of Your Screen Time Today</h2>
-    <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-8 drop-shadow-md">
-      Join thousands of users who have broken free from digital distractions with LoopLess.
-    </p>
-    <a href="#download" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300">
-      Get Started Free
-    </a>
-  </div>
-
-  <!-- Animated SVG Wave -->
-  <svg class="absolute bottom-0 left-0 w-full h-20 md:h-32 opacity-70" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path fill="white" fill-opacity="0.3" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      <animate attributeName="d" dur="15s" repeatCount="indefinite"
-        values="
-          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-          
-          M0,192L48,186.7C96,181,192,171,288,165.3C384,160,480,160,576,181.3C672,203,768,245,864,240C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-          
-          M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,154.7C672,160,768,128,864,117.3C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z
-        "
-      />
-    </path>
-  </svg>
-</section>
-
-<!-- Feature Cards with Hover Glow & SVG icons -->
-<section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
-  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-yellow-400 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
-    <div class="absolute -top-10 -right-10 w-28 h-28 bg-yellow-400 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-    <svg class="w-14 h-14 text-yellow-400 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.38 0 2.5 1.12 2.5 2.5S13.38 13 12 13s-2.5-1.12-2.5-2.5S10.62 8 12 8z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0 1 7.44 16.9l-1.42-1.42A8 8 0 1 0 4.58 11.58L3.17 10.17A10 10 0 0 1 12 2z" />
-    </svg>
-    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-yellow-600">Insightful Analytics</h3>
-    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
-      Track your screen time patterns with detailed insights and identify your biggest triggers.
-    </p>
-  </article>
-
-  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-purple-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
-    <div class="absolute -top-10 -right-10 w-28 h-28 bg-purple-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-    <svg class="w-14 h-14 text-purple-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-purple-600">Personalized CBT</h3>
-    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
-      Get tailored cognitive behavioral exercises that evolve based on your progress and mood.
-    </p>
-  </article>
-
-  <article class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl hover:shadow-pink-500 transition-shadow duration-500 cursor-pointer relative overflow-hidden group">
-    <div class="absolute -top-10 -right-10 w-28 h-28 bg-pink-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-    <svg class="w-14 h-14 text-pink-500 mb-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-      <circle cx="12" cy="12" r="10" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
-    </svg>
-    <h3 class="font-heading font-semibold text-xl mb-2 text-center text-pink-600">Progress Tracking</h3>
-    <p class="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
-      Monitor your improvements with visual charts and celebrate every success along the way.
-    </p>
-  </article>
-</section>
-
-<!-- Interactive Mood Selector -->
-<section class="max-w-4xl mx-auto px-6 mb-24">
-  <h2 class="text-3xl font-heading font-bold mb-8 text-center text-primary dark:text-primaryDark">How Are You Feeling Today?</h2>
-  <div class="flex justify-center gap-10">
-    <button aria-label="Happy" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-yellow-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
-      <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM8 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 7a5 5 0 0 1-4-2h8a5 5 0 0 1-4 2z"/></svg>
-      <span class="font-semibold text-yellow-600">Happy</span>
-    </button>
-    <button aria-label="Neutral" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-gray-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
-      <svg class="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM8 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 8a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4z"/></svg>
-      <span class="font-semibold text-gray-600">Neutral</span>
-    </button>
-    <button aria-label="Sad" class="flex flex-col items-center space-y-2 focus:outline-none focus:ring-4 focus:ring-blue-400 rounded-lg transform hover:scale-110 transition-transform duration-300">
-      <svg class="w-16 h-16 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm-4-9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-4 6a5 5 0 0 1-4-2h8a5 5 0 0 1-4 2z"/></svg>
-      <span class="font-semibold text-blue-600">Sad</span>
-    </button>
-  </div>
-</section>
-
 <!-- Floating Scroll to Top Button -->
 <button 
   id="scrollTopBtn" 
@@ -643,8 +914,7 @@
   </svg>
 </button>
 
-<!-- Animated Gradient Accent Bar -->
-<div class="w-full h-1 mt-12 rounded animate-background-pan bg-gradient-to-r from-primary to-violet-500"></div>
+
 
 <script>
   // Scroll to top button show/hide and action
@@ -664,10 +934,18 @@
 
 
 
-  <!-- Footer -->
-  <footer class="py-8 text-center text-gray-500 dark:text-gray-400 text-sm border-t border-gray-200 dark:border-gray-700">
-    &copy; 2025 LoopLess. All rights reserved.
-  </footer>
+<!-- Footer -->
+<footer class="py-8 text-center text-gray-500 dark:text-gray-400 text-sm border-t border-gray-200 dark:border-gray-700">
+  <div class="flex justify-center space-x-6 mb-4">
+    <a href="../about.html" class="hover:text-blue-500 transition">About</a>
+    <a href="../contact.html" class="hover:text-blue-500 transition">Contact</a>
+    <a href="../privacy.html" class="hover:text-blue-500 transition">Privacy</a>
+    <a href="../terms.html" class="hover:text-blue-500 transition">Terms</a>
+  </div>
+  &copy; 2025 LoopLess. All rights reserved.
+</footer>
+
+
 
   <!-- Dark Mode Toggle Script -->
   <script>
